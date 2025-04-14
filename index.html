@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily English Quiz for 3rd Graders</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily English Quiz for 3rd Graders</h1>
+            <div class="character">
+                <img src="https://cdn-icons-png.flaticon.com/512/10393/10393244.png" alt="Quiz Character" id="mascot">
+            </div>
+        </header>
+
+        <div class="quiz-container" id="quiz-container">
+            <div class="start-screen" id="start-screen">
+                <h2>Welcome to your Daily English Quiz!</h2>
+                <p>Are you ready to learn some new English words and have fun?</p>
+                <div class="name-input">
+                    <label for="player-name">What's your name?</label>
+                    <input type="text" id="player-name" placeholder="Type your name here">
+                </div>
+                <div class="category-selection">
+                    <h3>Choose a category:</h3>
+                    <div class="category-buttons">
+                        <button class="category-btn active" data-category="animals">Animals</button>
+                        <button class="category-btn" data-category="colors">Colors</button>
+                        <button class="category-btn" data-category="food">Food</button>
+                        <button class="category-btn" data-category="numbers">Numbers</button>
+                    </div>
+                </div>
+                <button id="start-btn" class="start-btn">Start Quiz!</button>
+            </div>
+
+            <div class="quiz-content" id="quiz-content">
+                <div class="quiz-header">
+                    <div class="player-info">
+                        <span id="player-display">Player</span>
+                    </div>
+                    <div class="quiz-timer">
+                        <span id="timer-icon">⏱️</span>
+                        <span id="timer-count">15</span>
+                    </div>
+                    <div class="score-display">
+                        <span>Score: </span>
+                        <span id="score">0</span>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h2 id="question-text">Question goes here</h2>
+                    <div class="question-image-container" id="question-image-container">
+                        <!-- Question image will be inserted here -->
+                    </div>
+                    <ul class="answer-options" id="answer-options">
+                        <!-- Answer options will be inserted here -->
+                    </ul>
+                </div>
+
+                <div class="quiz-footer">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <span id="question-counter">Question 1 of 5</span>
+                    <button id="next-btn" class="next-btn">Next Question</button>
+                </div>
+            </div>
+
+            <div class="result-container" id="result-container">
+                <div class="result-header">
+                    <h2>Quiz Completed!</h2>
+                    <div class="confetti" id="confetti"></div>
+                </div>
+                <div class="result-content">
+                    <div class="result-score">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" alt="Trophy" class="trophy-img">
+                        <h3>Your Score:</h3>
+                        <div class="final-score" id="final-score">0</div>
+                        <div class="score-message" id="score-message">Great job!</div>
+                    </div>
+                    <div class="result-feedback" id="result-feedback">
+                        <!-- Feedback will be inserted here -->
+                    </div>
+                </div>
+                <div class="result-actions">
+                    <button id="try-again-btn" class="try-again-btn">Try Again</button>
+                    <button id="change-category-btn" class="change-category-btn">Change Category</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ from Bob Nolen  | Daily English Quiz © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
